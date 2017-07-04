@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<View
+    android:layout_width="match_parent"
+    android:layout_height="10dp"></View>
+<RelativeLayout
+    android:layout_gravity="center_horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_iv_muban"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="64dp"
+        android:src="@mipmap/zhongcai_mubanzuo"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:src="@mipmap/xihongshi"
+        android:id="@+id/iv_item_zhongcaitu"
+        android:layout_width="200dp"
+        android:layout_height="98sp"
+        />
+</RelativeLayout>
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="点击"
+        android:textColor="#4a4a4a" />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+        android:id="@+id/subbt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/zhongcai_jian"
+        android:text="" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_shuzi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#4a4a4a" >
+        </TextView>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/addbt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/zhongcai_jia"
+            android:text="" >
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

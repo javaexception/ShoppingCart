@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.qzs.android.shoppingcart.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@mipmap/zhongcai_taitou"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/iv_zhongzhi_fanhui"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/baisejiantou" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:text="种菜"
+            android:textSize="15sp" />
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+        <GridView
+            android:listSelector="#00000000"
+            android:overScrollMode="never"
+            android:id="@+id/gridview_zc"
+            android:fadingEdge="none"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#fff6ed"
+            android:numColumns="2"
+            ></GridView>
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:id="@+id/re_zhongcai_tanchu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/zhongcai_iv"/>
+            <TextView
+                android:visibility="invisible"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/tv_zhongcai_hong"
+                android:layout_width="42px"
+                android:layout_height="42px"
+                android:background="@mipmap/home_hong"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:textColor="#ffffff"
+                />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:background="#ffffff"
+                android:id="@+id/layout_tanchu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btn_zhongcai_zhongzhi"
+                android:layout_width="wrap_content"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/zhongzhi"
+                android:text="购买"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
